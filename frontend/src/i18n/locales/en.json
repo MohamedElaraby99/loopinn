@@ -1,0 +1,124 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "products": "Our Products",
+    "booking": "Book a Room",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Sip . Work . Vibe",
+    "subtitle": "Your perfect space to enjoy premium coffee while working or relaxing",
+    "cta": {
+      "products": "Browse Products",
+      "booking": "Book Now"
+    }
+  },
+  "about": {
+    "title": "About Loopin",
+    "description": "We are passionate about creating the perfect coffee experience. Our carefully selected beans and expert brewing techniques ensure every cup tells a story of quality and craftsmanship."
+  },
+  "products": {
+    "title": "Our Products",
+    "subtitle": "Discover our exclusive collection of branded merchandise and premium coffee",
+    "orderNow": "Order Now",
+    "view": "View",
+    "categories": {
+      "all": "All",
+      "clothing": "Clothing",
+      "accessories": "Accessories",
+      "stationery": "Stationery",
+      "coffee": "Coffee"
+    }
+  },
+  "booking": {
+    "title": "Book a Room",
+    "subtitle": "Reserve your perfect space for meetings, study, or relaxation",
+    "roomName": "Room Name",
+    "capacity": "Capacity",
+    "people": "people",
+    "bookNow": "Book Now",
+    "availableSlots": "Available Time Slots",
+    "hero": {
+      "title": "Book Your Private Room",
+      "subtitle": "Enjoy a unique experience in private rooms designed specifically for your comfort. Quiet and comfortable spaces for your meetings or relaxation moments with the finest coffee.",
+      "features": {
+        "quiet": "Quiet Atmosphere",
+        "coffee": "Specialty Coffee",
+        "privacy": "Complete Privacy",
+        "work": "Perfect for Work"
+      },
+      "cta": "Book Now",
+      "available": "Available Now",
+      "roomsCount": "Rooms Available"
+    },
+    "form": {
+      "name": "Full Name",
+      "namePlaceholder": "Enter your full name",
+      "email": "Email Address",
+      "emailPlaceholder": "Enter your email address",
+      "phone": "Phone Number",
+      "phonePlaceholder": "Enter your phone number",
+      "date": "Date",
+      "timeSlot": "Time Slot",
+      "selectTime": "Select a time slot",
+      "notes": "Additional Notes",
+      "notesPlaceholder": "Any special requests or notes...",
+      "submit": "Confirm Booking",
+      "cancel": "Cancel"
+    },
+    "validation": {
+      "nameRequired": "Full name is required",
+      "emailRequired": "Email address is required",
+      "emailInvalid": "Please enter a valid email address",
+      "phoneRequired": "Phone number is required",
+      "phoneInvalid": "Please enter a valid phone number",
+      "dateRequired": "Date is required",
+      "timeRequired": "Time slot is required"
+    },
+    "success": "Booking confirmed successfully!",
+    "rooms": {
+      "small": "Small Meeting Room",
+      "medium": "Medium Conference Room",
+      "large": "Large Event Space",
+      "study": "Quiet Study Room"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with us",
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "message": "Your Message",
+      "submit": "Send Message"
+    },
+    "info": {
+      "phone": "Phone",
+      "email": "Email",
+      "address": "Address",
+      "hours": "Working Hours"
+    },
+    "success": "Message sent successfully!"
+  },
+  "footer": {
+    "description": "Experience the perfect blend of coffee and comfort at Loopin.",
+    "quickLinks": "Quick Links",
+    "contactInfo": "Contact Info",
+    "branches": "Our Branches",
+    "followUs": "Follow Us",
+    "workingHours": "Working Hours",
+    "hours": {
+      "weekdays": "Monday - Friday: 7:00 AM - 10:00 PM",
+      "weekend": "Saturday - Sunday: 8:00 AM - 11:00 PM"
+    },
+    "rights": "All rights reserved."
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "close": "Close",
+    "submit": "Submit",
+    "cancel": "Cancel"
+  }
+}
