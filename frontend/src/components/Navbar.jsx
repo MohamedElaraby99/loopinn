@@ -68,7 +68,7 @@ const Navbar = () => {
   return (
     <div className="fixed w-full top-0 z-50">
       <nav
-        className={`transition-all duration-300 ${
+        className={`transition-all duration-300 pt-4 ${
           scrolled ? "bg-[#561818]/95 backdrop-blur-sm" : "bg-transparent"
         }`}
       >

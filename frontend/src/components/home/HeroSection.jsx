@@ -34,12 +34,12 @@ const HeroSection = () => {
             img.onerror = () => {
               console.warn(`Failed to load image: ${url}, will retry`);
               // Retry once after a short delay
-              setTimeout(() => {
-                const retryImg = new Image();
-                retryImg.onload = () => resolve(url);
-                retryImg.onerror = () => reject(new Error(`Failed to load ${url} after retry`));
-                retryImg.src = url;
-              }, 1000);
+              // setTimeout(() => {
+              //   const retryImg = new Image();
+              //   retryImg.onload = () => resolve(url);
+              //   retryImg.onerror = () => reject(new Error(`Failed to load ${url} after retry`));
+              //   retryImg.src = url;
+              // }, 1000);
             };
             img.src = url;
           });
@@ -48,8 +48,7 @@ const HeroSection = () => {
         await Promise.all(imagePromises);
         setImagesLoaded(true);
       } catch (error) {
-        console.error("Error loading hero images:", error);
-        // Set loaded anyway to prevent infinite loading state
+       
         setImagesLoaded(true);
       }
     };
@@ -76,16 +75,16 @@ const HeroSection = () => {
     // }
   ];
 
-  if (!imagesLoaded) {
-    return (
-      <section className="relative h-screen bg-gray-900 flex items-center justify-center">
-        <div className="text-white text-center">
-          <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-amber-400 mx-auto mb-4"></div>
-          <p className="text-lg">Loading...</p>
-        </div>
-      </section>
-    );
-  }
+  // if (!imagesLoaded) {
+  //   return (
+  //     <section className="relative h-screen bg-gray-900 flex items-center justify-center">
+  //       <div className="text-white text-center">
+  //         <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-amber-400 mx-auto mb-4"></div>
+  //         <p className="text-lg">Loading...</p>
+  //       </div>
+  //     </section>
+  //   );
+  // }
 
   return (
     <section className="relative h-screen">

@@ -10,11 +10,6 @@ import AboutUs from "../components/home/AboutUs";
 const Home = () => {
   // Select featured products (first 8 products)
   const featuredProducts = productsData.slice(0, 8);
-
-  // Debug log
-  console.log("Products Data:", productsData);
-  console.log("Featured Products:", featuredProducts);
-
   return (
     <div className="min-h-screen">
       <HeroSection />

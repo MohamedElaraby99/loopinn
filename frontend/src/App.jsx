@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import { useResourceLoader } from "./hooks/useResourceLoader";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Loader from "./components/Loader";
@@ -16,7 +17,7 @@ import "./i18n/i18n";
 
 function App() {
   const { i18n } = useTranslation();
-  const [isLoading, setIsLoading] = useState(true);
+  const { isLoading, progress, loadedResources, totalResources, loadingStage } = useResourceLoader();
 
   useEffect(() => {
     // Set document direction based on language
@@ -24,17 +25,15 @@ function App() {
     document.documentElement.lang = i18n.language;
   }, [i18n.language]);
 
-  useEffect(() => {
-    // Simulate loading time
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 2000); // Show loader for 2 seconds
-
-    return () => clearTimeout(timer);
-  }, []);
-
   if (isLoading) {
-    return <Loader />;
+    return (
+      <Loader 
+        progress={progress} 
+        loadedResources={loadedResources} 
+        totalResources={totalResources}
+        loadingStage={loadingStage}
+      />
+    );
   }
 
   return (
